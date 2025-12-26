@@ -6,6 +6,7 @@ function PFAnalysis_2D_populational
 % The anisotropic sensitivities of perceptual speed between expanding and
 % contracting optic flows.
 % 
+% Dependency: Palamedes Toolbox (https://www.palamedestoolbox.org/)
 
 clear; close all;
 
@@ -231,4 +232,3 @@ h_sorted = p_sorted <= transpose(thresholds);
 
 % Restore original order
 hFDR(idx) = h_sorted;
-keyboard
