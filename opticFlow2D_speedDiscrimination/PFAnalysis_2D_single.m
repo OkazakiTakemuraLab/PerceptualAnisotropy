@@ -1,5 +1,4 @@
-function PFAnalysis_single
-
+function PFAnalysis_2D_single
 % Replicate analysis of single subject data by fitting psychometric
 % functions to data acquired in Experiment 1 of the following paper:
 % 
@@ -15,8 +14,6 @@ clear; close all;
 
 %% Load data
 
-% Select a data file (.mat) with participant ID first using user interface.
-% Then the code automatically select all data files from the same participant.  
 fileName = uigetfile('*.mat');
 subjectName = extractBetween(fileName, '_', '_');
 fileList = dir(strcat('*', subjectName{1}, '*.mat'));

@@ -71,6 +71,7 @@ medianWeberFractionCon = median(weberFractionCon, 1);
 % Calculate confidence interval by bootstrapping
 CI_exp = nan(2, length(speedConds));
 CI_con = nan(2, length(speedConds));
+rng(1); % Fix the random seed to ensure reproducibility of bootstrap results
 for n = 1:length(speedConds)
     CI_exp(:,n) = bootci(10000, {@median, weberFractionExp(:,n)}, 'type', 'bca');
     CI_con(:,n) = bootci(10000, {@median, weberFractionCon(:,n)}, 'type', 'bca');
@@ -153,7 +154,6 @@ for k = 1:numel(ax)
 end
 
 %% Statistics
-
 deltaWeb = weberFractionExp - weberFractionCon;
 
 nConds = length(speedConds);
