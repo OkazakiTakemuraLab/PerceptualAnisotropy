@@ -2,15 +2,15 @@ function PFAnalysis_2D_single
 % Replicate analysis of single subject data by fitting psychometric
 % functions to data acquired in Experiment 1 of the following paper:
 % 
-% Luo, J., Ashida, H., Yokoi, I., & Takemura, H. 
-% The anisotropic sensitivities of perceptual speed between expanding and
-% contracting optic flows.
+% Luo, J., Ashida, H., Yokoi, I. & Takemura, H. (2026) Anisotropic speed discrimination sensitivity for expanding and contracting optic flow. Journal of Vision, 26(10):18, 1–17.
 %
 % To replicate Figure 2 of Luo et al., please select .mat file including
 % the name of "P12".
 % Dependency: Palamedes Toolbox (https://www.palamedestoolbox.org/)
 
 clear; close all;
+%% Set path
+addpath(genpath('../Palamedes'));
 
 %% Load data
 

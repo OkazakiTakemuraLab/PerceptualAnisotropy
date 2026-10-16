@@ -2,9 +2,7 @@ function PFAnalysis_3D_populational
 % This code aims to replicate the population analysis of Experiment 2 (Figure 6) in
 % the following article:
 % 
-% Luo, J., Ashida, H., Yokoi, I., & Takemura, H. 
-% The anisotropic sensitivities of perceptual speed between expanding and
-% contracting optic flows.
+% Luo, J., Ashida, H., Yokoi, I. & Takemura, H. (2026) Anisotropic speed discrimination sensitivity for expanding and contracting optic flow. Journal of Vision, 26(10):18, 1–17.
 % 
 % Dependency: Palamedes Toolbox (https://www.palamedestoolbox.org/)
 
@@ -13,6 +11,7 @@ clear; close all;
 %% Set path
 addpath(genpath('../Violinplot-Matlab-master'));
 addpath(genpath('../boxplotGroup'));
+addpath(genpath('../Palamedes'));
 
 %% Load data and calculate CP(0.5) and CP(0.75)
 
